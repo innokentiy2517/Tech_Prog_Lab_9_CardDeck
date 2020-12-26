@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1041.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainFormController">
+   <children>
+      <ListView fx:id="Hearts" layoutY="157.0" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" prefHeight="620.0" prefWidth="246.0" style="-fx-background-color: LightPink; -fx-border-color: black;" />
+      <ListView fx:id="Spades" layoutX="248.0" layoutY="157.0" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" prefHeight="620.0" prefWidth="262.0" style="-fx-background-color: LightGray; -fx-border-color: black;" />
+      <ListView fx:id="Diamonds" layoutX="507.0" layoutY="157.0" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" prefHeight="620.0" prefWidth="262.0" style="-fx-background-color: LightPink; -fx-border-color: black;" />
+      <ListView fx:id="Clubs" layoutX="769.0" layoutY="157.0" onDragDropped="#onListViewDragDropped" onDragOver="#onListViewDragOver" prefHeight="620.0" prefWidth="262.0" style="-fx-background-color: LightGray; -fx-border-color: black;" />
+      <Label fx:id="Card" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="14.0" onDragDetected="#onDragDetected" prefHeight="54.0" prefWidth="240.0" style="-fx-border-color: black;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="128.0" text="Hearts" textFill="#f20b0b">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="507.0" layoutY="128.0" text="Diamonds" textFill="#f20b0b">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="128.0" text="Spades" textFill="#110000">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="769.0" layoutY="128.0" text="Clubs" textFill="#110000">
+         <font>
+            <Font name="Georgia" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
